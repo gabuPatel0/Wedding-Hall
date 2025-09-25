@@ -6,7 +6,7 @@ const nextConfig = {
   // Output static files for GitHub Pages
   output: 'export',
   // Ensure paths work under a subpath (for project pages)
-  basePath,
+  basePath:"/Wedding-Hall",
   assetPrefix,
   // Avoid image optimizer since GH Pages is static hosting
   images: {
