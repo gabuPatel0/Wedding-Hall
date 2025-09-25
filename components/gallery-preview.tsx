@@ -81,13 +81,12 @@ export function GalleryPreview() {
         </div>
 
         <div className="text-center">
-          <Button
-            size="lg"
-            className="bg-[#bc8a5f] hover:bg-gradient-to-r hover:from-[#d4a276] hover:to-[#8b5e34] text-white px-8 py-4 text-lg font-semibold transition-all duration-300"
-            asChild
+          <a
+            href="/gallery"
+            className="inline-flex items-center justify-center rounded-md text-lg font-semibold bg-[#bc8a5f] hover:bg-gradient-to-r hover:from-[#d4a276] hover:to-[#8b5e34] text-white px-8 py-4 transition-all duration-300"
           >
-            <a href="/gallery">View Full Gallery</a>
-          </Button>
+            View Full Gallery
+          </a>
         </div>
       </div>
     </section>
