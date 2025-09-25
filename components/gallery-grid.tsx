@@ -6,84 +6,84 @@ import { GalleryLightbox } from "@/components/gallery-lightbox"
 
 const galleryImages = [
   {
-    src: "/elegant-wedding-ceremony-setup-with-beautiful-deco.jpg",
+    src: "./elegant-wedding-ceremony-setup-with-beautiful-deco.jpg",
     alt: "Wedding ceremony setup",
     caption: "Wedding Ceremony Setup",
     category: "Weddings",
     size: "large", // 2x2 grid
   },
   {
-    src: "/wedding-reception-hall-with-elegant-table-settings.jpg",
+    src: "./wedding-reception-hall-with-elegant-table-settings.jpg",
     alt: "Reception hall",
     caption: "Reception Hall",
     category: "Weddings",
     size: "medium", // 1x2 grid
   },
   {
-    src: "/beautiful-outdoor-wedding-lawn-area.jpg",
+    src: "./beautiful-outdoor-wedding-lawn-area.jpg",
     alt: "Outdoor lawn area",
     caption: "Outdoor Lawn Area",
     category: "Weddings",
     size: "medium",
   },
   {
-    src: "/wedding-hall-stage-with-professional-lighting.jpg",
+    src: "./wedding-hall-stage-with-professional-lighting.jpg",
     alt: "Professional stage",
     caption: "Professional Stage Setup",
     category: "Corporate Events",
     size: "wide", // 2x1 grid
   },
   {
-    src: "/images/service-corporate.png",
+    src: "./images/service-corporate.png",
     alt: "Corporate event setup",
     caption: "Corporate Event Setup",
     category: "Corporate Events",
     size: "small",
   },
   {
-    src: "/birthday-party-decor.png",
+    src: "./birthday-party-decor.png",
     alt: "Birthday party decoration",
     caption: "Birthday Celebration",
     category: "Birthdays",
     size: "medium",
   },
   {
-    src: "/cultural-gathering-traditional-setup.jpg",
+    src: "./cultural-gathering-traditional-setup.jpg",
     alt: "Cultural gathering setup",
     caption: "Cultural Gathering",
     category: "Cultural Gatherings",
     size: "wide",
   },
   {
-    src: "/wedding-reception-dance-floor.jpg",
+    src: "./wedding-reception-dance-floor.jpg",
     alt: "Dance floor setup",
     caption: "Dance Floor",
     category: "Weddings",
     size: "medium",
   },
   {
-    src: "/elegant-dining-setup-wedding.jpg",
+    src: "./elegant-dining-setup-wedding.jpg",
     alt: "Dining setup",
     caption: "Elegant Dining",
     category: "Weddings",
     size: "small",
   },
   {
-    src: "/outdoor-garden-wedding-ceremony.jpg",
+    src: "./outdoor-garden-wedding-ceremony.jpg",
     alt: "Garden ceremony",
     caption: "Garden Ceremony",
     category: "Weddings",
     size: "large",
   },
   {
-    src: "/corporate-meeting-room-setup.jpg",
+    src: "./corporate-meeting-room-setup.jpg",
     alt: "Meeting room",
     caption: "Meeting Room",
     category: "Corporate Events",
     size: "small",
   },
   {
-    src: "/traditional-cultural-wedding-decor.jpg",
+    src: "./traditional-cultural-wedding-decor.jpg",
     alt: "Traditional wedding decor",
     caption: "Traditional Decor",
     category: "Cultural Gatherings",
@@ -172,7 +172,7 @@ export function GalleryGrid() {
             >
               <div className="relative w-full h-full overflow-hidden rounded-2xl shadow-lg border-2 border-[#bc8a5f]/20 hover:shadow-2xl transition-all duration-500">
                 <img
-                  src={image.src || "/placeholder.svg"}
+                  src={image.src || "./placeholder.svg"}
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"

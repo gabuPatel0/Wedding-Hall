@@ -76,7 +76,7 @@ export default function AboutPage() {
           <div className="justify-self-center w-full max-w-xl">
             <div className="rounded-3xl p-3" style={{ backgroundColor: "#ffedd8", border: "2px solid #d4a276" }}>
               <img
-                src="/elegant-wedding-hall-interior-with-beautiful-table.jpg"
+                src="./elegant-wedding-hall-interior-with-beautiful-table.jpg"
                 alt="Our venue interior"
                 className="w-full h-[360px] object-cover rounded-2xl"
               />

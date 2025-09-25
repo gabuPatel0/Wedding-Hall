@@ -5,22 +5,22 @@ import { useEffect, useState } from "react"
 
 const galleryImages = [
   {
-    src: require("../public/elegant-wedding-ceremony-setup-with-beautiful-deco.jpg"),
+    src: require("./elegant-wedding-ceremony-setup-with-beautiful-deco.jpg"),
     alt: "Wedding ceremony setup",
     caption: "Ceremony Setup",
   },
   {
-    src: require("../public/wedding-reception-hall-with-elegant-table-settings.jpg"),
+    src: require("./wedding-reception-hall-with-elegant-table-settings.jpg"),
     alt: "Reception hall",
     caption: "Reception Hall",
   },
   {
-    src: require("../public/beautiful-outdoor-wedding-lawn-area.jpg"),
+    src: require("./beautiful-outdoor-wedding-lawn-area.jpg"),
     alt: "Outdoor lawn area",
     caption: "Outdoor Lawn",
   },
   {
-    src: require("../public/wedding-hall-stage-with-professional-lighting.jpg"),
+    src: require("./wedding-hall-stage-with-professional-lighting.jpg"),
     alt: "Professional stage",
     caption: "Professional Stage",
   },
@@ -66,7 +66,7 @@ export function GalleryPreview() {
             <div key={index} className="group cursor-pointer" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-[#bc8a5f]/20">
                 <img
-                  src={image.src || "/placeholder.svg"}
+                  src={image.src || "./placeholder.svg"}
                   alt={image.alt}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />

@@ -123,7 +123,7 @@ export function GalleryLightbox({ images, isOpen, currentIndex, onClose, onNavig
         {/* Image */}
         <div className="relative">
           <img
-            src={currentImage.src || "/placeholder.svg"}
+            src={currentImage.src || "./placeholder.svg"}
             alt={currentImage.alt}
             className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl animate-in zoom-in-95 duration-300"
           />

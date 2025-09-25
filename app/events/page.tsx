@@ -6,22 +6,22 @@ export default function EventsPage() {
     {
       title: "Weddings",
       description: "Romantic décor, floral highlights, and timeless celebrations.",
-      image: "/elegant-wedding-ceremony-with-beautiful-decoration.jpg",
+      image: "./elegant-wedding-ceremony-with-beautiful-decoration.jpg",
     },
     {
       title: "Corporate Events",
       description: "Classy seating, conferences, and gala setups.",
-      image: "/professional-corporate-event-setup-in-elegant-hall.jpg",
+      image: "./professional-corporate-event-setup-in-elegant-hall.jpg",
     },
     {
       title: "Birthday Parties",
       description: "Vibrant, youthful celebrations tailored to your style.",
-      image: "/festive-birthday-party-setup-with-decorations.jpg",
+      image: "./festive-birthday-party-setup-with-decorations.jpg",
     },
     {
       title: "Cultural Gatherings",
       description: "Traditional décor and community vibes for meaningful moments.",
-      image: "/traditional-cultural-wedding-decor.jpg",
+      image: "./traditional-cultural-wedding-decor.jpg",
     },
   ]
 
@@ -31,7 +31,7 @@ export default function EventsPage() {
       <section className="relative h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/wedding-reception-hall-with-elegant-table-settings.jpg"
+            src="./wedding-reception-hall-with-elegant-table-settings.jpg"
             alt="Events hero"
             className="w-full h-full object-cover"
           />
