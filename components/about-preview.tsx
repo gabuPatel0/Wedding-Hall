@@ -52,7 +52,7 @@ export function AboutPreview() {
           <div className={`${isVisible ? "animate-stagger-fade-in" : "opacity-0"}`} style={{ animationDelay: "0.2s" }}>
             <div className="bg-[#f3d5b5] p-6 rounded-2xl shadow-lg">
               <img
-                src={require("./elegant-wedding-hall-interior-with-beautiful-table.jpg")}
+                src="./elegant-wedding-hall-interior-with-beautiful-table.jpg"
                 alt="Wedding Hall interior"
                 className="w-full h-80 object-cover rounded-xl"
               />
