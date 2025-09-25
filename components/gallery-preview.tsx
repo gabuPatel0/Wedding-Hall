@@ -5,22 +5,22 @@ import { useEffect, useState } from "react"
 
 const galleryImages = [
   {
-    src: "/elegant-wedding-ceremony-setup-with-beautiful-deco.jpg",
+    src: require("../public/elegant-wedding-ceremony-setup-with-beautiful-deco.jpg"),
     alt: "Wedding ceremony setup",
     caption: "Ceremony Setup",
   },
   {
-    src: "/wedding-reception-hall-with-elegant-table-settings.jpg",
+    src: require("../public/wedding-reception-hall-with-elegant-table-settings.jpg"),
     alt: "Reception hall",
     caption: "Reception Hall",
   },
   {
-    src: "/beautiful-outdoor-wedding-lawn-area.jpg",
+    src: require("../public/beautiful-outdoor-wedding-lawn-area.jpg"),
     alt: "Outdoor lawn area",
     caption: "Outdoor Lawn",
   },
   {
-    src: "/wedding-hall-stage-with-professional-lighting.jpg",
+    src: require("../public/wedding-hall-stage-with-professional-lighting.jpg"),
     alt: "Professional stage",
     caption: "Professional Stage",
   },
