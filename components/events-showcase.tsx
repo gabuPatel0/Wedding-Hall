@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { Heart, Building, Cake, Music } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 const eventTypes = [
   {
@@ -110,7 +111,7 @@ export function EventsShowcase() {
 
         <div className="mt-12 text-center">
           <Button asChild className="bg-[#bc8a5f] hover:bg-[#a47148] text-white px-8 py-4 text-lg font-semibold">
-            <a href="/events">View Events</a>
+            <Link href="/events">View Events</Link>
           </Button>
         </div>
       </div>

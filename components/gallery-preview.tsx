@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 const galleryImages = [
   {
@@ -81,12 +82,12 @@ export function GalleryPreview() {
         </div>
 
         <div className="text-center">
-          <a
+          <Link
             href="/gallery"
             className="inline-flex items-center justify-center rounded-md text-lg font-semibold bg-[#bc8a5f] hover:bg-gradient-to-r hover:from-[#d4a276] hover:to-[#8b5e34] text-white px-8 py-4 transition-all duration-300"
           >
             View Full Gallery
-          </a>
+          </Link>
         </div>
       </div>
     </section>

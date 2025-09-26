@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { useEffect, useRef, useState } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import Link from "next/link"
 
 export function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -129,11 +130,12 @@ export function HeroSection() {
         </p>
 
         <div ref={ctaWrapRef} className="flex flex-col sm:flex-row gap-4 justify-center opacity-0">
-          {/* <Button
+          <Button
             size="lg"
             className="bg-[#bc8a5f] hover:bg-gradient-to-r hover:from-[#d4a276] hover:to-[#8b5e34] text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+            asChild
           >
-            Book Your Event
+            <Link href="/contact">Book Your Event</Link>
           </Button>
           <Button
             variant="outline"
@@ -141,8 +143,8 @@ export function HeroSection() {
             className="border-[#bc8a5f] text-[#bc8a5f] hover:bg-[#bc8a5f] hover:text-white px-8 py-4 text-lg font-semibold transition-all duration-300 bg-transparent"
             asChild
           >
-            <a href="/gallery">View Gallery</a>
-          </Button> */}
+            <Link href="/gallery">View Gallery</Link>
+          </Button>
         </div>
       </div>
     </section>

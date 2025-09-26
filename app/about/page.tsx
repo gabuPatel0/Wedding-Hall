@@ -1,5 +1,6 @@
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function AboutPage() {
   const values = [
@@ -144,7 +145,7 @@ export default function AboutPage() {
             We’d love to host your special day.
           </h3>
           <Button asChild size="lg" className="bg-[#bc8a5f] hover:bg-[#a47148] text-white px-8 py-4 text-lg font-semibold">
-            <a href="/contact">Get in Touch</a>
+            <Link href="/contact">Get in Touch</Link>
           </Button>
         </div>
       </section>

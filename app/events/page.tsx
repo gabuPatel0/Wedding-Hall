@@ -1,5 +1,6 @@
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function EventsPage() {
   const categories = [
@@ -73,7 +74,7 @@ export default function EventsPage() {
                     asChild
                     className="mt-4 w-fit bg-white/90 text-[#6f4518] hover:bg-white shadow-md opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all"
                   >
-                    <a href="#showcase">View More</a>
+                    <Link href="#showcase">View More</Link>
                   </Button>
                 </div>
               </div>
@@ -95,10 +96,10 @@ export default function EventsPage() {
                 <p className="text-lg text-[#8b5e34] mb-6">{c.description}</p>
                 <div className="flex gap-3">
                   <Button asChild className="bg-[#bc8a5f] hover:bg-[#a47148] text-white">
-                    <a href="/gallery">See in Gallery</a>
+                    <Link href="/gallery">See in Gallery</Link>
                   </Button>
                   <Button asChild variant="outline" className="border-[#bc8a5f] text-[#bc8a5f] hover:bg-[#bc8a5f] hover:text-white">
-                    <a href="/#contact-teaser">Enquire</a>
+                    <Link href="/#contact-teaser">Enquire</Link>
                   </Button>
                 </div>
               </div>
@@ -116,7 +117,7 @@ export default function EventsPage() {
           </h3>
           <p className="text-[#8b5e34] mb-6">Tell us about your event and we’ll tailor the experience for you.</p>
           <Button asChild size="lg" className="bg-[#bc8a5f] hover:bg-[#a47148] text-white px-8 py-4 text-lg font-semibold">
-            <a href="/contact">Book Now</a>
+            <Link href="/contact">Book Now</Link>
           </Button>
         </div>
       </section>

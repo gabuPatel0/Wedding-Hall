@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Phone, Mail, MessageCircle } from "lucide-react"
+import Link from "next/link"
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false)
@@ -54,11 +55,9 @@ export default function ContactPage() {
             <span className="text-balance">We’re here to make your celebrations unforgettable.</span>
           </p>
           <div className={`${mounted ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "0.3s" }}>
-            <a href="#contact-form">
-              <Button className="mt-6 bg-[#bc8a5f] hover:bg-[#a47148] text-white px-8 py-4 text-lg font-semibold transform transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">
-                Start a Conversation
-              </Button>
-            </a>
+            <Button asChild className="mt-6 bg-[#bc8a5f] hover:bg-[#a47148] text-white px-8 py-4 text-lg font-semibold transform transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">
+              <Link href="#contact-form">Start a Conversation</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -183,7 +182,7 @@ export default function ContactPage() {
               bg: "#f3d5b5",
             },
           ].map(({ title, value, href, Icon, bg }) => (
-            <a
+            <Link
               key={title}
               href={href}
               className="group rounded-2xl bg-white/60 border border-[#e7bc91] p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#bc8a5f]/30"
@@ -196,7 +195,7 @@ export default function ContactPage() {
               </div>
               <div className="text-[#603808] font-semibold">{title}</div>
               <div className="text-[#8b5e34]">{value}</div>
-            </a>
+            </Link>
           ))}
         </div>
       </section>
@@ -232,7 +231,7 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-2xl md:text-3xl font-semibold text-[#ffedd8] mb-4">Your perfect celebration starts here.</h3>
           <Button asChild size="lg" className="bg-[#d4a276] hover:bg-[#bc8a5f] text-[#603808] font-semibold">
-            <a href="/gallery">Book a Visit</a>
+            <Link href="/gallery">Book a Visit</Link>
           </Button>
         </div>
       </section>

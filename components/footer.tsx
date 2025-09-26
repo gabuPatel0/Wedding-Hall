@@ -1,7 +1,7 @@
 "use client"
 
 import { Heart, Facebook, Instagram, Twitter } from "lucide-react"
-
+import Link from "next/link"
 export function Footer() {
   return (
     <footer className="bg-[#603808] text-[#ffedd8] py-16 px-6">
@@ -17,15 +17,15 @@ export function Footer() {
               Creating magical moments and unforgettable celebrations for over a decade. Your dream event starts here.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="p-2 bg-[#8b5e34] rounded-full hover:bg-[#bc8a5f] transition-colors duration-300">
+              <Link href="#" className="p-2 bg-[#8b5e34] rounded-full hover:bg-[#bc8a5f] transition-colors duration-300">
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 bg-[#8b5e34] rounded-full hover:bg-[#bc8a5f] transition-colors duration-300">
+              </Link>
+              <Link href="#" className="p-2 bg-[#8b5e34] rounded-full hover:bg-[#bc8a5f] transition-colors duration-300">
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 bg-[#8b5e34] rounded-full hover:bg-[#bc8a5f] transition-colors duration-300">
+              </Link>
+              <Link href="#" className="p-2 bg-[#8b5e34] rounded-full hover:bg-[#bc8a5f] transition-colors duration-300">
                 <Twitter className="w-5 h-5" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -34,29 +34,29 @@ export function Footer() {
             <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-[#f3d5b5] hover:text-white transition-colors duration-300">
+                <Link href="/" className="text-[#f3d5b5] hover:text-white transition-colors duration-300">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-[#f3d5b5] hover:text-white transition-colors duration-300">
+                <Link href="/about" className="text-[#f3d5b5] hover:text-white transition-colors duration-300">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/gallery" className="text-[#f3d5b5] hover:text-white transition-colors duration-300">
+                <Link href="/gallery" className="text-[#f3d5b5] hover:text-white transition-colors duration-300">
                   Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#events" className="text-[#f3d5b5] hover:text-white transition-colors duration-300">
+                <Link href="/events" className="text-[#f3d5b5] hover:text-white transition-colors duration-300">
                   Events
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-[#f3d5b5] hover:text-white transition-colors duration-300">
+                <Link href="/contact" className="text-[#f3d5b5] hover:text-white transition-colors duration-300">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -80,12 +80,12 @@ export function Footer() {
         <div className="border-t border-[#8b5e34] pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-[#f3d5b5] text-sm">© 2025 Elegant Wedding Hall. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-[#f3d5b5] hover:text-white text-sm transition-colors duration-300">
+            <Link href="#" className="text-[#f3d5b5] hover:text-white text-sm transition-colors duration-300">
               Privacy Policy
-            </a>
-            <a href="#" className="text-[#f3d5b5] hover:text-white text-sm transition-colors duration-300">
+            </Link>
+            <Link href="#" className="text-[#f3d5b5] hover:text-white text-sm transition-colors duration-300">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>
