@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Link from "next/link"
+import { getImagePath } from "@/lib/utils"
 
 export function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -108,7 +109,7 @@ export function HeroSection() {
           onError={() => setVideoReady(true)}
           onPlay={() => setVideoReady(true)}
         >
-          <source src="./video.mp4" type="video/mp4" />
+          <source src={getImagePath("./video.mp4")} type="video/mp4" />
         </video>
       </div>
 

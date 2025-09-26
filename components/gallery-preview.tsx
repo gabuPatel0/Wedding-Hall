@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { getImagePath } from "@/lib/utils"
 
 const galleryImages = [
   {
@@ -67,7 +68,7 @@ export function GalleryPreview() {
             <div key={index} className="group cursor-pointer" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="relative overflow-hidden rounded-2xl shadow-lg border-2 border-[#bc8a5f]/20">
                 <img
-                  src={image.src || "./placeholder.svg"}
+                  src={getImagePath(image.src) || getImagePath("./placeholder.svg")}
                   alt={image.alt}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />

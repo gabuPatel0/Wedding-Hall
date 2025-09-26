@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { getImagePath } from "@/lib/utils"
 
 export function AboutPreview() {
   const [isVisible, setIsVisible] = useState(false)
@@ -52,7 +53,7 @@ export function AboutPreview() {
           <div className={`${isVisible ? "animate-stagger-fade-in" : "opacity-0"}`} style={{ animationDelay: "0.2s" }}>
             <div className="bg-[#f3d5b5] p-6 rounded-2xl shadow-lg">
               <img
-                src="./elegant-wedding-hall-interior-with-beautiful-table.jpg"
+                src={getImagePath("./elegant-wedding-hall-interior-with-beautiful-table.jpg")}
                 alt="Wedding Hall interior"
                 className="w-full h-80 object-cover rounded-xl"
               />

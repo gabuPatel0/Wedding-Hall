@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { GalleryLightbox } from "@/components/gallery-lightbox"
+import { getImagePath } from "@/lib/utils"
 
 const galleryImages = [
   {
@@ -172,7 +173,7 @@ export function GalleryGrid() {
             >
               <div className="relative w-full h-full overflow-hidden rounded-2xl shadow-lg border-2 border-[#bc8a5f]/20 hover:shadow-2xl transition-all duration-500">
                 <img
-                  src={image.src || "./placeholder.svg"}
+                  src={getImagePath(image.src) || getImagePath("./placeholder.svg")}
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"

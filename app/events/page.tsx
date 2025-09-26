@@ -1,28 +1,29 @@
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { getImagePath } from "@/lib/utils"
 
 export default function EventsPage() {
   const categories = [
     {
       title: "Weddings",
       description: "Romantic décor, floral highlights, and timeless celebrations.",
-      image: "./elegant-wedding-ceremony-with-beautiful-decoration.jpg",
+      image: getImagePath("./elegant-wedding-ceremony-with-beautiful-decoration.jpg"),
     },
     {
       title: "Corporate Events",
       description: "Classy seating, conferences, and gala setups.",
-      image: "./professional-corporate-event-setup-in-elegant-hall.jpg",
+      image: getImagePath("./professional-corporate-event-setup-in-elegant-hall.jpg"),
     },
     {
       title: "Birthday Parties",
       description: "Vibrant, youthful celebrations tailored to your style.",
-      image: "./festive-birthday-party-setup-with-decorations.jpg",
+      image: getImagePath("./festive-birthday-party-setup-with-decorations.jpg"),
     },
     {
       title: "Cultural Gatherings",
       description: "Traditional décor and community vibes for meaningful moments.",
-      image: "./traditional-cultural-wedding-decor.jpg",
+      image: getImagePath("./traditional-cultural-wedding-decor.jpg"),
     },
   ]
 
@@ -32,7 +33,7 @@ export default function EventsPage() {
       <section className="relative h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="./wedding-reception-hall-with-elegant-table-settings.jpg"
+            src={getImagePath("./wedding-reception-hall-with-elegant-table-settings.jpg")}
             alt="Events hero"
             className="w-full h-full object-cover"
           />

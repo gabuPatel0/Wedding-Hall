@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Phone, Mail, MessageCircle } from "lucide-react"
 import Link from "next/link"
+import { getImagePath } from "@/lib/utils"
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false)
@@ -34,7 +35,7 @@ export default function ContactPage() {
       <section className="relative h-[55vh] md:h-[65vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="./beautiful-outdoor-wedding-lawn-area.jpg"
+            src={getImagePath("./beautiful-outdoor-wedding-lawn-area.jpg")}
             alt="Venue watermark"
             className="w-full h-full object-cover opacity-20"
           />

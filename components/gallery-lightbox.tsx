@@ -2,6 +2,7 @@
 
 import { useEffect, useCallback } from "react"
 import { Button } from "@/components/ui/button"
+import { getImagePath } from "@/lib/utils"
 
 interface GalleryImage {
   src: string
@@ -123,7 +124,7 @@ export function GalleryLightbox({ images, isOpen, currentIndex, onClose, onNavig
         {/* Image */}
         <div className="relative">
           <img
-            src={currentImage.src || "./placeholder.svg"}
+            src={getImagePath(currentImage.src) || getImagePath("./placeholder.svg")}
             alt={currentImage.alt}
             className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl animate-in zoom-in-95 duration-300"
           />

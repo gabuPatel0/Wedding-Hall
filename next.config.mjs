@@ -1,18 +1,12 @@
 /** @type {import('next').NextConfig} */
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
-const assetPrefix = basePath ? `${basePath}/` : undefined
-
 const nextConfig = {
   // Output static files for GitHub Pages
   output: 'export',
   // Ensure paths work under a subpath (for project pages)
   reactStrictMode: true,
-  images: {
-    unoptimized: true, // Disable default image optimization
-  },
-  assetPrefix: "/Wedding-Hall/",
+  // Set base path for GitHub Pages repository
   basePath: "/Wedding-Hall",
-  assetPrefix,
+  assetPrefix: "/Wedding-Hall/",
   // Avoid image optimizer since GH Pages is static hosting
   images: {
     unoptimized: true,
